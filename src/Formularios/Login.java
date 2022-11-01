@@ -125,6 +125,7 @@ public class Login extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 0, 51));
         jLabel4.setText("SoundBitz");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

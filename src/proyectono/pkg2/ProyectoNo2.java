@@ -122,6 +122,167 @@ public class ProyectoNo2 {
       System.out.println("Error.");
       e.printStackTrace();
     }
+         //*********** Crear archivos del secuencial canciones
+         
+         try {
+      File archivoC1 = new File("C:\\MEIA\\canciones.txt");
+      if (archivoC1.createNewFile()) {
+        System.out.println("Archivo creado: " + archivoC1.getName());
+      } else {
+        System.out.println("Este archivo ya existe.");
+      }
+    } catch (IOException e) {
+      System.out.println("Error.");
+      e.printStackTrace();
+    }
+         
+         try {
+      File archivoC2 = new File("C:\\MEIA\\desc_canciones.txt");
+      if (archivoC2.createNewFile()) {
+        String info = "nombre_simbolico: canciones.txt" + System.getProperty( "line.separator" )
+                    + "fecha_creacion: " + System.getProperty( "line.separator" )
+                    + "usuario_creacion: " + System.getProperty( "line.separator" )
+                    + "fecha_modificación: " + System.getProperty( "line.separator" )
+                    + "usuario_modificación: " + System.getProperty( "line.separator" )
+                    + "#_registros: 0" + System.getProperty( "line.separator" )
+                    + "registros_activos: 0" + System.getProperty( "line.separator" )
+                    + "registros_inactivos: 0" + System.getProperty( "line.separator" )
+                    + "Max. para reorganizar: 3";
+        
+        Escribir = new FileWriter(archivoC2,true);
+        bw = new BufferedWriter(Escribir);
+        bw.write(info);
+        bw.close();
+        
+        System.out.println("Archivo creado: " + archivoC2.getName());
+      } else {
+        System.out.println("Este archivo ya existe.");
+      }
+    } catch (IOException e) {
+      System.out.println("Error.");
+      e.printStackTrace();
+    }
+         try {
+      File archivoC5 = new File("C:\\MEIA\\bitacora_canciones.txt");
+      if (archivoC5.createNewFile()) {
+        System.out.println("Archivo creado: " + archivoC5.getName());       
+        
+      } else {
+        System.out.println("Este archivo ya existe.");
+      }
+    } catch (IOException e) {
+      System.out.println("Error.");
+      e.printStackTrace();
+    }
+         try {
+      File archivoC6 = new File("C:\\MEIA\\desc_bitacora_canciones.txt");
+      if (archivoC6.createNewFile()) {
+        System.out.println("Archivo creado: " + archivoC6.getName());
+        String info = "nombre_simbolico: bitacora_canciones.txt" + System.getProperty( "line.separator" )
+                    + "fecha_creacion: " + System.getProperty( "line.separator" )
+                    + "usuario_creacion: " + System.getProperty( "line.separator" )
+                    + "fecha_modificación: " + System.getProperty( "line.separator" )
+                    + "usuario_modificación: " + System.getProperty( "line.separator" )
+                    + "#_registros: 0" + System.getProperty( "line.separator" )
+                    + "registros_activos: 0" + System.getProperty( "line.separator" )
+                    + "registros_inactivos: 0" + System.getProperty( "line.separator" )
+                    + "Max. para reorganizar: 3";
+        Escribir = new FileWriter(archivoC6,true);
+        bw = new BufferedWriter(Escribir);
+        bw.write(info);
+        bw.close();
+        Escribir.close();
+      } else {
+        System.out.println("Este archivo ya existe.");
+      }
+    } catch (IOException e) {
+      System.out.println("Error.");
+      e.printStackTrace();
+    }
+         
+         //***********
+         
+         
+         //*********** Crear archivos del secuencial listas_canciones
+         
+         try {
+      File archivoLC1 = new File("C:\\MEIA\\listas_canciones.txt");
+      if (archivoLC1.createNewFile()) {
+        System.out.println("Archivo creado: " + archivoLC1.getName());
+      } else {
+        System.out.println("Este archivo ya existe.");
+      }
+    } catch (IOException e) {
+      System.out.println("Error.");
+      e.printStackTrace();
+    }
+         
+         try {
+      File archivoLC2 = new File("C:\\MEIA\\desc_listas_canciones.txt");
+      if (archivoLC2.createNewFile()) {
+        String info = "nombre_simbolico: canciones.txt" + System.getProperty( "line.separator" )
+                    + "fecha_creacion: " + System.getProperty( "line.separator" )
+                    + "usuario_creacion: " + System.getProperty( "line.separator" )
+                    + "fecha_modificación: " + System.getProperty( "line.separator" )
+                    + "usuario_modificación: " + System.getProperty( "line.separator" )
+                    + "#_registros: 0" + System.getProperty( "line.separator" )
+                    + "registros_activos: 0" + System.getProperty( "line.separator" )
+                    + "registros_inactivos: 0" + System.getProperty( "line.separator" )
+                    + "Max. para reorganizar: 3";
+        
+        Escribir = new FileWriter(archivoLC2,true);
+        bw = new BufferedWriter(Escribir);
+        bw.write(info);
+        bw.close();
+        
+        System.out.println("Archivo creado: " + archivoLC2.getName());
+      } else {
+        System.out.println("Este archivo ya existe.");
+      }
+    } catch (IOException e) {
+      System.out.println("Error.");
+      e.printStackTrace();
+    }
+         try {
+      File archivoLC5 = new File("C:\\MEIA\\bitacora_listas_canciones.txt");
+      if (archivoLC5.createNewFile()) {
+        System.out.println("Archivo creado: " + archivoLC5.getName());       
+        
+      } else {
+        System.out.println("Este archivo ya existe.");
+      }
+    } catch (IOException e) {
+      System.out.println("Error.");
+      e.printStackTrace();
+    }
+         try {
+      File archivoLC6 = new File("C:\\MEIA\\desc_bitacora_listas_canciones.txt");
+      if (archivoLC6.createNewFile()) {
+        System.out.println("Archivo creado: " + archivoLC6.getName());
+        String info = "nombre_simbolico: bitacora_canciones.txt" + System.getProperty( "line.separator" )
+                    + "fecha_creacion: " + System.getProperty( "line.separator" )
+                    + "usuario_creacion: " + System.getProperty( "line.separator" )
+                    + "fecha_modificación: " + System.getProperty( "line.separator" )
+                    + "usuario_modificación: " + System.getProperty( "line.separator" )
+                    + "#_registros: 0" + System.getProperty( "line.separator" )
+                    + "registros_activos: 0" + System.getProperty( "line.separator" )
+                    + "registros_inactivos: 0" + System.getProperty( "line.separator" )
+                    + "Max. para reorganizar: 3";
+        Escribir = new FileWriter(archivoLC6,true);
+        bw = new BufferedWriter(Escribir);
+        bw.write(info);
+        bw.close();
+        Escribir.close();
+      } else {
+        System.out.println("Este archivo ya existe.");
+      }
+    } catch (IOException e) {
+      System.out.println("Error.");
+      e.printStackTrace();
+    }
+         
+         //***********
+         
        try {
     File indice = new File("C:\\MEIA\\indice.txt");
     if (indice.createNewFile()) {

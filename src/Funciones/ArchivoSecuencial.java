@@ -95,12 +95,12 @@ public class ArchivoSecuencial {
     }
     
     public void Add(String key, String ingreso, String pathBit, String pathMaster, String pathBitDes, String pathMasterDesc, String user, boolean repetidos){                
-        if (!repetidos) {
+       /* if (!repetidos) {
             if (!Search(key, pathBit, pathMaster).equals("null")) {
             //Si la llave primaria ya esta en la bitácora o en el maestro se retorna
             return;
             }
-        }                
+        }    */            
         //Verificar descriptor
         String[][] descriptorBit = getDescriptor(pathBitDes);
         String[][] descriptorMast = getDescriptor(pathMasterDesc);
@@ -137,7 +137,7 @@ public class ArchivoSecuencial {
         }        
     }
     
-    private String[][] getDescriptor(String ruta){
+    public String[][] getDescriptor(String ruta){
         String[][] fileInfo = new String[9][2];
         File file = new File(ruta);
         if (file.exists() == true) {
@@ -186,6 +186,7 @@ public class ArchivoSecuencial {
                  BufferedWriter bw = new BufferedWriter(Escribir)) {
                 bw.write(strContenido+ System.getProperty( "line.separator" ));
                 bw.close();
+                Escribir.close();
             }
                 
                 return true;
