@@ -26,7 +26,7 @@ public class Menu extends javax.swing.JFrame {
         user_lbl.setText(l2.usertx);
         if (l2.rol == 1) {
             rol_lbl.setText("Administrador");
-            JBTN_deleteProfile.setEnabled(false);
+            JBTN_ListasMusica.setEnabled(false);
         }else{
             rol_lbl.setText("Usuario");
             JBTN_IngresarUser.setEnabled(false);
@@ -57,7 +57,7 @@ public class Menu extends javax.swing.JFrame {
         user_lbl = new javax.swing.JLabel();
         rol_lbl = new javax.swing.JLabel();
         JBTN_search = new javax.swing.JButton();
-        JBTN_deleteProfile = new javax.swing.JButton();
+        JBTN_ListasMusica = new javax.swing.JButton();
         JBTN_logout = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -122,10 +122,15 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        JBTN_deleteProfile.setBackground(new java.awt.Color(102, 102, 102));
-        JBTN_deleteProfile.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        JBTN_deleteProfile.setForeground(new java.awt.Color(255, 255, 255));
-        JBTN_deleteProfile.setText("Eliminar perfil");
+        JBTN_ListasMusica.setBackground(new java.awt.Color(102, 102, 102));
+        JBTN_ListasMusica.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
+        JBTN_ListasMusica.setForeground(new java.awt.Color(255, 255, 255));
+        JBTN_ListasMusica.setText("Listas Musica");
+        JBTN_ListasMusica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBTN_ListasMusicaActionPerformed(evt);
+            }
+        });
 
         JBTN_logout.setBackground(new java.awt.Color(102, 102, 102));
         JBTN_logout.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
@@ -150,7 +155,7 @@ public class Menu extends javax.swing.JFrame {
                     .addComponent(JBTN_backup, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(JBTN_deleteProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(JBTN_ListasMusica, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JBTN_search, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JBTN_logout, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
@@ -174,7 +179,7 @@ public class Menu extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(JBTN_search)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(JBTN_deleteProfile)
+                        .addComponent(JBTN_ListasMusica)
                         .addGap(18, 18, 18)
                         .addComponent(JBTN_logout))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -249,6 +254,14 @@ public static int ValMod=0;
         of1.setVisible(true);
     }//GEN-LAST:event_JBTN_modifyActionPerformed
 
+    private void JBTN_ListasMusicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBTN_ListasMusicaActionPerformed
+        // TODO add your handling code here:
+        Musica m1 = new Musica();
+        m1.setVisible(true);
+         this.setVisible(false);
+        
+    }//GEN-LAST:event_JBTN_ListasMusicaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -290,8 +303,8 @@ public static int ValMod=0;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton JBTN_IngresarUser;
+    private javax.swing.JButton JBTN_ListasMusica;
     private javax.swing.JButton JBTN_backup;
-    private javax.swing.JButton JBTN_deleteProfile;
     private javax.swing.JButton JBTN_logout;
     private javax.swing.JButton JBTN_modify;
     private javax.swing.JButton JBTN_search;

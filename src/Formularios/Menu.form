@@ -54,7 +54,7 @@
                   </Group>
                   <EmptySpace pref="88" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="JBTN_deleteProfile" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
+                      <Component id="JBTN_ListasMusica" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                       <Component id="JBTN_search" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                       <Component id="JBTN_logout" alignment="1" min="-2" pref="135" max="-2" attributes="0"/>
                   </Group>
@@ -85,7 +85,7 @@
                       <Group type="102" attributes="0">
                           <Component id="JBTN_search" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="JBTN_deleteProfile" min="-2" max="-2" attributes="0"/>
+                          <Component id="JBTN_ListasMusica" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="JBTN_logout" min="-2" max="-2" attributes="0"/>
                       </Group>
@@ -238,7 +238,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBTN_searchActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="JBTN_deleteProfile">
+        <Component class="javax.swing.JButton" name="JBTN_ListasMusica">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="66" green="66" red="66" type="rgb"/>
@@ -249,8 +249,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Eliminar perfil"/>
+            <Property name="text" type="java.lang.String" value="Listas Musica"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JBTN_ListasMusicaActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="JBTN_logout">
           <Properties>
