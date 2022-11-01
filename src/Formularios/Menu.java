@@ -26,7 +26,7 @@ public class Menu extends javax.swing.JFrame {
         user_lbl.setText(l2.usertx);
         if (l2.rol == 1) {
             rol_lbl.setText("Administrador");
-            JBTN_ListasMusica.setEnabled(false);
+            
         }else{
             rol_lbl.setText("Usuario");
             JBTN_IngresarUser.setEnabled(false);
@@ -233,6 +233,9 @@ public static int ValMod=0;
 
     private void JBTN_backupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBTN_backupActionPerformed
         // TODO add your handling code here:
+        Backup l1 = new Backup();
+        l1.setVisible(true);
+         this.setVisible(false);
     }//GEN-LAST:event_JBTN_backupActionPerformed
 
     private void JBTN_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBTN_searchActionPerformed
