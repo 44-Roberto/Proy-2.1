@@ -95,12 +95,12 @@ public class ArchivoSecuencial {
     }
     
     public void Add(String key, String ingreso, String pathBit, String pathMaster, String pathBitDes, String pathMasterDesc, String user, boolean repetidos){                
-       /* if (!repetidos) {
+        if (!repetidos) {
             if (!Search(key, pathBit, pathMaster).equals("null")) {
             //Si la llave primaria ya esta en la bitácora o en el maestro se retorna
             return;
             }
-        }    */            
+        }                
         //Verificar descriptor
         String[][] descriptorBit = getDescriptor(pathBitDes);
         String[][] descriptorMast = getDescriptor(pathMasterDesc);

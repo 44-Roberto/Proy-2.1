@@ -107,6 +107,11 @@ public class AddCancion extends javax.swing.JFrame {
         JBTNVolver.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         JBTNVolver.setForeground(new java.awt.Color(255, 255, 255));
         JBTNVolver.setText("Volver");
+        JBTNVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JBTNVolverActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -238,13 +243,20 @@ public String RutaCancion="";
             String strError="";
             
             ArchivoSecuencial as = new ArchivoSecuencial();            
-            as.Add(Usuario, Informacion, bitacoraUsersPath, userPath, bitacoraDesc, userDec, Usuario, false);            
+            as.Add(Usuario, Informacion, bitacoraUsersPath, userPath, bitacoraDesc, userDec, Usuario, true);            
             
             Menu m1=new Menu();
             m1.setVisible(true);
             this.dispose();
       //***************      
     }//GEN-LAST:event_JBTNAgregarCancionActionPerformed
+
+    private void JBTNVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JBTNVolverActionPerformed
+        // TODO add your handling code here:
+        Menu m1 = new Menu();
+        m1.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_JBTNVolverActionPerformed
 
     /**
      * @param args the command line arguments
